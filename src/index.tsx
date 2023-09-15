@@ -1,8 +1,8 @@
 import App from './App';
 import React from 'react';
 import './styles/app.css';
+import ReactDOM from "react-dom/client";
 
-import { createRoot } from "react-dom/client";
 import {
     createBrowserRouter,
     RouterProvider,
@@ -17,11 +17,17 @@ const router = createBrowserRouter([
         ),
     },
     {
-        path: "result",
+        path: "/result",
         element: <Result />
     },
-]);
+], {
+    basename: process.env.PUBLIC_URL
+});
 
-createRoot(document.getElementById("root")).render(
-    <RouterProvider router={router} />
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
+  <React.StrictMode>
+      <RouterProvider router={router} />
+  </React.StrictMode>
 );
