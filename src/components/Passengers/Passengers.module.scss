@@ -1,0 +1,23 @@
+.group {
+  border: 1px solid var(--grey-color);
+  border-radius: 6px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+}
+
+.isError {
+  border: 1px solid var(--red-color);
+}
+
+.count {
+  margin: 0 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .group {
+    height: 38px;
+  }
+}

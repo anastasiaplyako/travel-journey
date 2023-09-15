@@ -1,0 +1,105 @@
+.home {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 734px;
+  background-color: white;
+  min-height: 334px;
+  border-radius: 16px;
+  padding: 38px 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.block {
+  height: 40px;
+}
+
+.cities {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.divider {
+  border-left: 1px dotted black;
+  height: 16px;
+  position: absolute;
+  width: 1px;
+  top: 18px;
+  bottom: 8px;
+}
+
+.name {
+  position: absolute;
+  left: 20px;
+  width: max-content;
+}
+
+.distance {
+  position: absolute;
+  top: 8px;
+  right: 30px;
+}
+
+.speech {
+  min-width: 70px;
+  border: 2px solid var(--purple-dark-color);
+  border-radius: 6px;
+  padding: 4px 10px;
+  text-align: center;
+  color: var(--purple-dark-color);
+  position: relative;
+  font-size: 16px;
+}
+
+.speech:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 10px solid var(--purple-dark-color);
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  right: -20px;
+}
+
+.speech:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 10px solid #fff;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  right: -17px;
+}
+
+.info {
+  margin-bottom: 30px;
+  text-align: center;
+
+  div {
+    margin-bottom: 8px;
+  }
+
+  span {
+    color: var(--purple-dark-color);
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 16px 8px;
+    box-shadow: 1px 1px 10px 1px var(--grey-color);
+  }
+}

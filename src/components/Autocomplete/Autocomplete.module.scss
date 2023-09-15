@@ -1,0 +1,13 @@
+.city {
+  display: flex;
+}
+
+.input {
+  min-width: 387px;
+}
+
+@media only screen and (max-width: 600px) {
+  .input {
+    min-width: 216px;
+  }
+}
